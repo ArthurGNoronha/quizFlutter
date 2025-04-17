@@ -7,7 +7,7 @@ Este projeto é um aplicativo de quiz desenvolvido em Flutter. O objetivo do app
 - Perguntas com alternativas e imagens.
 - Integração com Firebase para armazenamento e análise.
 - Registro de erros com Firebase Crashlytics.
-- Ranking local dos melhores resultados.
+- Ranking local dos melhores resultados utilizando shared preferences.
 
 ## Pré-requisitos
 
