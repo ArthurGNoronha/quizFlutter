@@ -1,12 +1,13 @@
 # Quiz Flutter
 
-Este projeto é um aplicativo de quiz desenvolvido em Flutter. O objetivo do app é apresentar perguntas de múltipla escolha para o usuário, exibindo imagens e alternativas, e ao final mostrar o resultado do quiz. As perguntas são extraidas do banco de dados Firebase.
+Este projeto é um aplicativo de quiz desenvolvido em Flutter. O objetivo do app é apresentar perguntas de múltipla escolha para o usuário, exibindo imagens e alternativas, e ao final mostrar o resultado do quiz. As perguntas são extraídas do banco de dados Firebase.
 
 ## Funcionalidades
 
 - Perguntas com alternativas e imagens.
 - Integração com Firebase para armazenamento e análise.
 - Registro de erros com Firebase Crashlytics.
+- Ranking local dos melhores resultados.
 
 ## Pré-requisitos
 
@@ -17,21 +18,40 @@ Este projeto é um aplicativo de quiz desenvolvido em Flutter. O objetivo do app
 ## Como executar o projeto
 
 1. **Clone o repositório:**
-   ```sh
-   git clone https://github.com/arthurgnoronha/quizFlutter
-   cd quiz_flutter
+    ```sh
+    git clone https://github.com/arthurgnoronha/quizFlutter
+    cd quiz_flutter
+    ```
 
-2. **Instale as dependecias**
+2. **Instale as dependências:**
     ```sh
     flutter pub get
+    ```
 
-3. **Execute na plataforma desejada**
-    ``` sh
+3. **Execute na plataforma desejada:**
+    ```sh
     flutter run -d chrome
     ```
-    *Substitua "chrome" pelo navegador desejado*
+    *Substitua "chrome" pelo navegador ou dispositivo desejado.*
 
-    **Ou alternativamente, execute a apk**
-        ``` sh
-        flutter build apk --release
-        ```
+    **Ou, para gerar o APK para Android:**
+    ```sh
+    flutter build apk --release
+    ```
+
+## Demonstração do Quiz:
+
+1. Pergunta Padrão:
+    ![Padrão](assets/padrao.png)
+
+2. Pergunta Correta:
+    ![Correta](assets/correta.png)
+
+3. Pergunta Incorreta:
+    ![Incorreta](assets/incorreta.png)
+
+4. Tela Final
+    ![Final](assets/final.png)
+
+5. Ranking (Local apenas):
+    ![Ranking](assets/ranking.png)
